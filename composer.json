@@ -1,0 +1,69 @@
+{
+    "name": "blogcutter/laravel-session-visual-analytics",
+    "description": "A Laravel package to visualize and manage session data with advanced analytics and visualizations.",
+    "keywords": [
+      "laravel",
+      "visual-analytics",
+      "analytics",
+      "sessions",
+      "blogcutter",
+      "session-management",
+      "data-visualization",
+      "real-time-analytics",
+      "php-analytics"
+    ],
+    "type": "library",
+    "version": "11.3.2",
+    "license": "MIT",
+    "authors": [
+      {
+        "name": "Imran Ahmed",
+        "email": "support@blogcutter.com",
+        "homepage": "https://www.blogcutter.com",
+        "role": "Developer"
+      }
+    ],
+    "require": {
+      "php": "^8.2",
+      "illuminate/support": "^11.0",
+      "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+      "phpunit/phpunit": "^10.0",
+      "mockery/mockery": "^1.6",
+      "orchestra/testbench": "^8.0"
+    },
+    "autoload": {
+      "psr-4": {
+        "BlogCutter\\LaravelSessionVisualAnalytics\\": "src/"
+      },
+      "files": [
+        "src/helpers.php"
+      ]
+    },
+    "config": {
+      "preferred-install": "dist",
+      "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "scripts": {
+      "post-autoload-dump": [
+        "@php artisan package:discover --ansi"
+      ]
+    },
+    "support": {
+      "issues": "https://github.com/imranbru99/laravel-session-visual-analytics/issues",
+      "source": "https://github.com/imranbru99/laravel-session-visual-analytics"
+    },
+    "extra": {
+      "laravel": {
+        "providers": [
+          "BlogCutter\\LaravelSessionVisualAnalytics\\ServiceProvider"
+        ],
+        "aliases": {
+          "SessionAnalytics": "BlogCutter\\LaravelSessionVisualAnalytics\\Facades\\SessionAnalytics"
+        }
+      }
+    }
+  }
