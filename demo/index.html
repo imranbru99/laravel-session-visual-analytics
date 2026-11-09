@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SessionVista — Laravel Session Visual Analytics</title>
+  <meta name="description" content="SessionVista is a premium Laravel session analytics package with live dashboards, device insights, geography, and session health monitoring.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+
+  <header class="nav">
+    <a class="brand" href="index.html"><span class="mark"></span>SessionVista</a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#install">Install</a>
+      <a href="dashboard.html">Live Demo</a>
+    </nav>
+    <a class="btn btn-primary" href="https://imrandev.bd/contact">Hire Imran</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Laravel 11 / 12 · Real-time session intelligence</p>
+        <h1>SessionVista</h1>
+        <p class="lede">See every active session, device, and geography signal in one premium operations dashboard — built for production Laravel apps.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="dashboard.html">Open dashboard demo</a>
+          <a class="btn btn-ghost" href="#install">Install package</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="../docs/images/dashboard-overview.jpg" alt="SessionVista live analytics dashboard">
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head">
+        <h2>Everything ops teams need</h2>
+        <p>One package. Full visibility. Business-ready UI.</p>
+      </div>
+      <div class="feature-grid">
+        <article>
+          <h3>Live session radar</h3>
+          <p>Track online, idle, and expired sessions with automatic heartbeats and status transitions.</p>
+        </article>
+        <article>
+          <h3>Device & browser mix</h3>
+          <p>Parse user agents into desktop, mobile, tablet, browser, and platform insights.</p>
+        </article>
+        <article>
+          <h3>Path & bounce analytics</h3>
+          <p>Top pages, bounce rate, average duration, and 24-hour activity charts out of the box.</p>
+        </article>
+        <article>
+          <h3>Geo-ready architecture</h3>
+          <p>Optional HTTP GeoIP provider with clean country/city storage for expansion markets.</p>
+        </article>
+        <article>
+          <h3>Drop-in Laravel package</h3>
+          <p>Auto-discovery, publishable config/views/migrations, and secure middleware-gated routes.</p>
+        </article>
+        <article>
+          <h3>JSON overview API</h3>
+          <p>Power custom admin widgets or refresh loops with `/session-vista/api/overview`.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="dashboard" class="section gallery">
+      <div class="section-head">
+        <h2>Premium dashboard surfaces</h2>
+        <p>Designed for founders, CTOs, and support leads — not just developers.</p>
+      </div>
+      <div class="shots">
+        <figure>
+          <img src="../docs/images/dashboard-overview.jpg" alt="Overview dashboard">
+          <figcaption>Overview · KPIs, activity chart, active users</figcaption>
+        </figure>
+        <figure>
+          <img src="../docs/images/dashboard-sessions.jpg" alt="Sessions table">
+          <figcaption>Sessions · search, filters, duration, status</figcaption>
+        </figure>
+        <figure>
+          <img src="../docs/images/dashboard-devices.jpg" alt="Devices and geography">
+          <figcaption>Devices & Geo · mix, browsers, countries</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="install" class="section">
+      <div class="section-head">
+        <h2>Install in minutes</h2>
+        <p>Composer + migrate + open the dashboard.</p>
+      </div>
+      <pre class="code"><code>composer require imranbru99/laravel-session-visual-analytics
+
+php artisan vendor:publish --tag=session-vista-config
+php artisan vendor:publish --tag=session-vista-migrations
+php artisan migrate
+
+# Dashboard: /session-vista
+# Demo UI:   open /demo/dashboard.html</code></pre>
+    </section>
+
+    <section class="section contact-band">
+      <div>
+        <h2>Need custom features or enterprise hardening?</h2>
+        <p>Imran Ahmed builds production Laravel, Next.js, and AI systems for global teams.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:me@imrandev.bd">me@imrandev.bd</a>
+        <a class="btn btn-ghost" href="https://wa.me/8801576918420">WhatsApp +880 1576-918420</a>
+        <a class="btn btn-ghost" href="https://imrandev.bd/contact">imrandev.bd/contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>SessionVista</strong> by Imran Ahmed · Dhaka, BD / Remote Worldwide
+    </div>
+    <div class="footer-links">
+      <a href="https://imrandev.bd">Portfolio</a>
+      <a href="https://github.com/imranbru99">GitHub</a>
+      <a href="https://linkedin.com/in/imranbru99">LinkedIn</a>
+      <a href="https://x.com/imrandev_bd">X</a>
+      <a href="mailto:me@imrandev.bd">Email</a>
+      <a href="https://wa.me/8801576918420">WhatsApp</a>
+      <a href="https://imrandev.bd/contact">All contact</a>
+    </div>
+    <p>© 2026 Imran Ahmed · For future development, retainers, and architecture reviews: <a href="https://imrandev.bd/contact">imrandev.bd/contact</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SessionVista Dashboard Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="mark"></span>SessionVista</div>
+      <nav class="nav">
+        <a class="active" href="dashboard.html">Overview</a>
+        <a href="#sessions">Sessions</a>
+        <a href="#devices">Devices & Geo</a>
+        <a href="index.html">Marketing site</a>
+      </nav>
+      <p class="side-note">Demo data · Laravel package wires live traffic automatically.</p>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <div>
+          <h1>Live Session Analytics</h1>
+          <p>Premium operations view for concurrent users, engagement, and client mix.</p>
+        </div>
+        <div class="chip"><span class="dot"></span> Demo live feed</div>
+      </div>
+
+      <section class="kpis">
+        <article><span>Active Sessions</span><strong id="kpi-active">1,284</strong><em>892 online now</em></article>
+        <article><span>Peak Concurrent</span><strong>2,091</strong><em>Last 24 hours</em></article>
+        <article><span>Avg Duration</span><strong>12m 48s</strong><em>Healthy engagement</em></article>
+        <article><span>Bounce Rate</span><strong>31%</strong><em>Single page-views</em></article>
+      </section>
+
+      <section class="panels">
+        <div class="card">
+          <h2>Sessions · last 24 hours</h2>
+          <canvas id="chart" height="120"></canvas>
+        </div>
+        <div class="card" id="sessions">
+          <h2>Active users</h2>
+          <table>
+            <thead><tr><th>User</th><th>Device</th><th>Status</th></tr></thead>
+            <tbody id="users"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="panels" id="devices">
+        <div class="card">
+          <h2>Top pages</h2>
+          <table>
+            <tbody>
+              <tr><td>/dashboard</td><td>4,812</td></tr>
+              <tr><td>/billing</td><td>2,104</td></tr>
+              <tr><td>/projects</td><td>1,776</td></tr>
+              <tr><td>/settings/security</td><td>984</td></tr>
+              <tr><td>/api/docs</td><td>641</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h2>Device mix</h2>
+          <div class="bars" id="device-bars"></div>
+          <h2 style="margin-top:22px">Top countries</h2>
+          <table>
+            <tbody>
+              <tr><td>Bangladesh</td><td>418</td></tr>
+              <tr><td>United States</td><td>296</td></tr>
+              <tr><td>United Kingdom</td><td>184</td></tr>
+              <tr><td>United Arab Emirates</td><td>121</td></tr>
+              <tr><td>India</td><td>98</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <p class="footer-note">Built by <strong>Imran Ahmed</strong> · Future development: <a href="https://imrandev.bd/contact">imrandev.bd/contact</a> · me@imrandev.bd · +880 1576-918420</p>
+    </main>
+  </div>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
